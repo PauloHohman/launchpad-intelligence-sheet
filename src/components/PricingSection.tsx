@@ -1,8 +1,48 @@
 
 import { motion } from 'framer-motion';
 import { Check, Zap, Star, Clock } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const PricingSection = () => {
+  // Estado para o contador de tempo
+  const [timeLeft, setTimeLeft] = useState({
+    hours: 23,
+    minutes: 47,
+    seconds: 12
+  });
+
+  // useEffect para atualizar o contador a cada segundo
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(prevTime => {
+        let { hours, minutes, seconds } = prevTime;
+        
+        if (seconds > 0) {
+          seconds--;
+        } else if (minutes > 0) {
+          minutes--;
+          seconds = 59;
+        } else if (hours > 0) {
+          hours--;
+          minutes = 59;
+          seconds = 59;
+        } else {
+          // Quando chegar a zero, reinicia o contador
+          hours = 23;
+          minutes = 59;
+          seconds = 59;
+        }
+        
+        return { hours, minutes, seconds };
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  // Função para formatar números com zero à esquerda
+  const formatTime = (time: number) => time.toString().padStart(2, '0');
+
   const features = [
     "✅ Dashboards automáticos e interativos",
     "✅ Controle financeiro completo",
@@ -99,7 +139,7 @@ const PricingSection = () => {
                   <span className="font-bold">OFERTA EXPIRA EM:</span>
                 </div>
                 <div className="text-2xl font-bold text-dark-light">
-                  23:47:12
+                  {formatTime(timeLeft.hours)}:{formatTime(timeLeft.minutes)}:{formatTime(timeLeft.seconds)}
                 </div>
               </motion.div>
             </div>
