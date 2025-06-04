@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,4 +99,37 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3c343c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ef899b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9c142c;
+}
+
+/* Glass effect utilities */
+.glass {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: rgba(60, 52, 60, 0.8);
+  border: 1px solid rgba(239, 137, 155, 0.2);
+}
+
+.glass-light {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(124, 124, 124, 0.1);
+  border: 1px solid rgba(239, 137, 155, 0.1);
 }
