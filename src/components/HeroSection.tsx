@@ -137,8 +137,8 @@ const HeroSection = () => {
               transition={{ delay: 1.2 }}
               className="absolute top-20 -left-10 glass p-4 rounded-xl"
             >
-              <div className="text-dark-highlight text-2xl font-bold">-48%</div>
-              <div className="text-dark-light text-sm">Prejuízos</div>
+              <div className="text-dark-highlight text-2xl font-bold">+500%</div>
+              <div className="text-dark-light text-sm">Eficiência</div>
             </motion.div>
             
             <motion.div
@@ -147,8 +147,8 @@ const HeroSection = () => {
               transition={{ delay: 1.4 }}
               className="absolute bottom-20 -right-10 glass p-4 rounded-xl"
             >
-              <div className="text-dark-highlight text-2xl font-bold">+300%</div>
-              <div className="text-dark-light text-sm">Clareza</div>
+              <div className="text-dark-highlight text-2xl font-bold">-70%</div>
+              <div className="text-dark-light text-sm">Tempo</div>
             </motion.div>
           </motion.div>
         </div>
