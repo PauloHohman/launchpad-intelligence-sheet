@@ -39,9 +39,9 @@ const HeroSection = () => {
               transition={{ delay: 0.4 }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold text-dark-light leading-tight"
             >
-              <span className="text-dark-cta">ELIMINE</span> até
-              <span className="text-dark-highlight block">48% Menos</span>
-              <span className="text-dark-light">Prejuízo</span>
+              <span className="text-dark-light">Planilha</span>
+              <span className="text-dark-highlight block">Gestão</span>
+              <span className="text-dark-cta">Inteligente</span>
             </motion.h1>
             
             {/* Subtitle */}
