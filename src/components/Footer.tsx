@@ -3,8 +3,12 @@ import { motion } from 'framer-motion';
 import { MessageCircle, Shield, Clock } from 'lucide-react';
 
 const Footer = () => {
+  // Links configuráveis
+  const linkcompra = "https://exemplo.com/compra";
+  const linkzap = "https://wa.me/5511999999999";
+
   return (
-    <footer className="bg-dark-accent border-t border-dark-highlight/20">
+    <footer id="footer" className="bg-dark-accent border-t border-dark-highlight/20">
       <div className="container mx-auto px-6 py-12">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -70,14 +74,17 @@ const Footer = () => {
             <p className="text-dark-medium mb-4">
               Precisa de ajuda? Nossa equipe está pronta para te atender!
             </p>
-            <motion.button
+            <motion.a
+              href={linkzap}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-300 inline-flex items-center gap-2"
             >
               <MessageCircle className="w-5 h-5" />
               WhatsApp Suporte
-            </motion.button>
+            </motion.a>
             <p className="text-dark-medium text-sm mt-3">
               📞 Atendimento de seg. à sex., 9h às 18h
             </p>
@@ -101,13 +108,16 @@ const Footer = () => {
               52% OFF
             </span>
           </div>
-          <motion.button
+          <motion.a
+            href={linkcompra}
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="bg-gradient-to-r from-dark-cta to-dark-highlight text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-dark-highlight/25 transition-all duration-300"
+            className="inline-block bg-gradient-to-r from-dark-cta to-dark-highlight text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-dark-highlight/25 transition-all duration-300"
           >
             GARANTIR MINHA PLANILHA AGORA
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         {/* Anti-piracy notice */}

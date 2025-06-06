@@ -42,8 +42,12 @@ const BenefitsSection = () => {
     }
   ];
 
+  // Links configuráveis
+  const linkcompra = "https://exemplo.com/compra";
+  const linkzap = "https://wa.me/5511999999999";
+
   return (
-    <section className="py-20 bg-gradient-to-b from-dark-primary to-dark-accent relative overflow-hidden">
+    <section id="benefits" className="py-20 bg-gradient-to-b from-dark-primary to-dark-accent relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZzEiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZWY4OTliIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJ1cmwoI2cxKSIvPjwvc3ZnPg==')] repeat"></div>
@@ -104,42 +108,52 @@ const BenefitsSection = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-center mt-16 relative"
+          className="text-center mt-16"
         >
-          {/* Floating photo - positioned absolutely to overlap */}
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="absolute -top-16 left-1/2 transform -translate-x-1/2 z-20"
-          >
-            <div className="w-32 h-32 rounded-full overflow-hidden shadow-2xl">
-              <img 
-                src="/lovable-uploads/2e0ce9c8-37bb-472f-94b8-d6b58f6c91f7.png" 
-                alt="William Flores"
-                className="w-full h-full object-cover"
-              />
+          <div className="glass p-8 rounded-2xl max-w-4xl mx-auto">
+            {/* Header with photo and name side by side */}
+            <div className="flex items-center justify-center gap-6 mb-6">
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="relative"
+                whileHover={{ y: -5 }}
+              >
+                <div className="w-24 h-24 rounded-full overflow-hidden shadow-2xl">
+                  <img 
+                    src="/lovable-uploads/2e0ce9c8-37bb-472f-94b8-d6b58f6c91f7.png" 
+                    alt="William Flores"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Enhanced floating glow effect */}
+                <div className="absolute inset-0 rounded-full bg-gradient-radial from-dark-highlight/30 to-transparent blur-xl animate-pulse"></div>
+                <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-dark-highlight/20 via-dark-cta/20 to-dark-highlight/20 blur-lg animate-pulse"></div>
+              </motion.div>
+              
+              <div>
+                <h3 className="text-3xl md:text-4xl font-bold text-dark-highlight">William Flores</h3>
+                <p className="text-dark-medium text-lg">Especialista em Gestão de Restaurantes</p>
+              </div>
             </div>
-            {/* Floating glow effect */}
-            <div className="absolute inset-0 rounded-full bg-gradient-radial from-dark-highlight/20 to-transparent blur-xl animate-pulse"></div>
-          </motion.div>
-
-          <div className="glass p-8 pt-20 rounded-2xl max-w-4xl mx-auto relative z-10">
-            <div className="mb-6">
-              <h3 className="text-2xl font-bold text-dark-highlight mb-4">William Flores</h3>
-              <p className="text-dark-light italic leading-relaxed">
-                "Eu sei como é vender bem e mesmo assim não ver o dinheiro sobrar. Já passei por isso. 
-                Foi por isso que criei essa planilha: para ajudar donos de restaurante como você a entender, 
-                de forma clara e sem complicação, <strong className="text-dark-highlight">quanto entra, quanto sai e principalmente, quanto sobra.</strong>"
-              </p>
-            </div>
-            <motion.button
+            
+            <p className="text-dark-light italic leading-relaxed text-lg mb-8">
+              "Eu sei como é vender bem e mesmo assim não ver o dinheiro sobrar. Já passei por isso. 
+              Foi por isso que criei essa planilha: para ajudar donos de restaurante como você a entender, 
+              de forma clara e sem complicação, <strong className="text-dark-highlight">quanto entra, quanto sai e principalmente, quanto sobra.</strong>"
+            </p>
+            
+            <motion.a
+              href={linkcompra}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-dark-cta to-dark-highlight text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-dark-highlight/25 transition-all duration-300"
+              className="inline-block bg-gradient-to-r from-dark-cta to-dark-highlight text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-dark-highlight/25 transition-all duration-300"
             >
               QUERO CONQUISTAR CLAREZA FINANCEIRA
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
       </div>

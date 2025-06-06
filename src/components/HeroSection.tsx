@@ -5,8 +5,11 @@ import RocketIcon from './RocketIcon';
 import FloatingElements from './FloatingElements';
 
 const HeroSection = () => {
+  // Links configuráveis
+  const linkcompra = "https://exemplo.com/compra";
+
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-dark-primary via-dark-accent to-dark-primary overflow-hidden">
+    <section id="hero" className="relative min-h-screen bg-gradient-to-br from-dark-primary via-dark-accent to-dark-primary overflow-hidden pt-20">
       <FloatingElements />
       
       {/* Background grid pattern */}
@@ -101,13 +104,16 @@ const HeroSection = () => {
                 </span>
               </div>
               
-              <motion.button
+              <motion.a
+                href={linkcompra}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full md:w-auto bg-gradient-to-r from-dark-cta to-dark-highlight text-white font-bold text-lg px-8 py-4 rounded-xl shadow-2xl hover:shadow-dark-highlight/25 transition-all duration-300 animate-glow"
+                className="inline-block w-full md:w-auto bg-gradient-to-r from-dark-cta to-dark-highlight text-white font-bold text-lg px-8 py-4 rounded-xl shadow-2xl hover:shadow-dark-highlight/25 transition-all duration-300 animate-glow text-center"
               >
                 🚀 QUERO ELIMINAR OS PREJUÍZOS AGORA
-              </motion.button>
+              </motion.a>
               
               <p className="text-dark-medium text-sm">
                 ⚡ Download imediato após o pagamento
