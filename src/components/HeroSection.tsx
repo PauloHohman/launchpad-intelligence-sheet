@@ -51,7 +51,7 @@ const HeroSection = () => {
               transition={{ delay: 0.6 }}
               className="text-xl md:text-2xl text-dark-medium leading-relaxed"
             >
-              A planilha que <strong className="text-dark-highlight">donos de restaurantes de verdade</strong> usam para sair do caos e conquistar clareza financeira, mesmo sem ser especialista em números.
+              Chegou a planilha que <strong className="text-dark-highlight">donos de restaurantes de verdade</strong> usam para sair do caos e conquistar clareza financeira, mesmo sem ser especialista em números.
             </motion.p>
             
             {/* Features List */}
@@ -147,8 +147,8 @@ const HeroSection = () => {
               transition={{ delay: 1.4 }}
               className="absolute bottom-20 -right-10 glass p-4 rounded-xl"
             >
-              <div className="text-dark-highlight text-2xl font-bold">-70%</div>
-              <div className="text-dark-light text-sm">Tempo</div>
+              <div className="text-dark-highlight text-2xl font-bold">-48%</div>
+              <div className="text-dark-light text-sm">Prejuízo</div>
             </motion.div>
           </motion.div>
         </div>

@@ -104,29 +104,29 @@ const BenefitsSection = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-center mt-16"
+          className="text-center mt-16 relative"
         >
-          <div className="glass p-8 rounded-2xl max-w-4xl mx-auto">
+          {/* Floating photo - positioned absolutely to overlap */}
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="absolute -top-16 left-1/2 transform -translate-x-1/2 z-20"
+          >
+            <div className="w-32 h-32 rounded-full overflow-hidden shadow-2xl">
+              <img 
+                src="/lovable-uploads/2e0ce9c8-37bb-472f-94b8-d6b58f6c91f7.png" 
+                alt="William Flores"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* Floating glow effect */}
+            <div className="absolute inset-0 rounded-full bg-gradient-radial from-dark-highlight/20 to-transparent blur-xl animate-pulse"></div>
+          </motion.div>
+
+          <div className="glass p-8 pt-20 rounded-2xl max-w-4xl mx-auto relative z-10">
             <div className="mb-6">
-              <div className="flex items-center justify-center gap-6 mb-4">
-                <motion.div
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  whileInView={{ scale: 1, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  className="relative"
-                >
-                  <div className="w-20 h-20 rounded-full overflow-hidden ring-4 ring-dark-highlight/30 shadow-2xl">
-                    <img 
-                      src="/lovable-uploads/2e0ce9c8-37bb-472f-94b8-d6b58f6c91f7.png" 
-                      alt="William Flores"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  {/* Floating glow effect */}
-                  <div className="absolute inset-0 rounded-full bg-gradient-radial from-dark-highlight/20 to-transparent blur-xl animate-pulse"></div>
-                </motion.div>
-                <h3 className="text-2xl font-bold text-dark-highlight">William Flores</h3>
-              </div>
+              <h3 className="text-2xl font-bold text-dark-highlight mb-4">William Flores</h3>
               <p className="text-dark-light italic leading-relaxed">
                 "Eu sei como é vender bem e mesmo assim não ver o dinheiro sobrar. Já passei por isso. 
                 Foi por isso que criei essa planilha: para ajudar donos de restaurante como você a entender, 
