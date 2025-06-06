@@ -18,8 +18,8 @@ const Footer = () => {
               Planilha Gestão Inteligente
             </h3>
             <p className="text-dark-medium mb-6">
-              Acelere sua produtividade com a planilha mais completa do mercado. 
-              Transforme dados em resultados extraordinários.
+              A planilha que donos de restaurantes de verdade usam para conquistar clareza financeira 
+              e eliminar prejuízos.
             </p>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2 text-dark-light">
@@ -46,7 +46,7 @@ const Footer = () => {
                 "Suporte técnico",
                 "Política de privacidade", 
                 "Termos de uso",
-                "Garantia e reembolso"
+                "Garantia de 7 dias"
               ].map((link, index) => (
                 <li key={index}>
                   <a 
@@ -92,7 +92,7 @@ const Footer = () => {
           className="glass p-8 rounded-2xl text-center mb-8"
         >
           <h3 className="text-2xl font-bold text-dark-light mb-4">
-            🚀 Última chance de acelerar sua gestão!
+            🚀 Última chance de eliminar os prejuízos!
           </h3>
           <div className="flex items-center justify-center gap-4 mb-6">
             <span className="text-2xl text-dark-medium line-through">R$97</span>
@@ -110,11 +110,37 @@ const Footer = () => {
           </motion.button>
         </motion.div>
 
+        {/* Anti-piracy notice */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="glass-light p-6 rounded-xl mb-8"
+        >
+          <h4 className="text-lg font-bold text-dark-cta mb-4 text-center">⚠️ PIRATARIA É CRIME</h4>
+          <div className="text-dark-medium text-sm space-y-2">
+            <p>
+              A venda da planilha <strong className="text-dark-light">Caixa Blindado</strong> só pode ser realizada através deste site, 
+              registrado em nome de <strong className="text-dark-highlight">EVENTO FOODVERSO</strong>. Qualquer outro local em que você 
+              encontre esse produto é falsificação e infringe a lei.
+            </p>
+            <p>
+              Evite conteúdos pirateados. Não apoiamos cópias ilegais e não nos responsabilizamos por compras feitas fora deste ambiente oficial.
+            </p>
+            <p>
+              A planilha foi desenvolvida com base em anos de operação real, estudos de gestão, e prática direta no campo.
+            </p>
+            <p className="text-dark-cta font-semibold">
+              Não se engane com cópias baratas que não entregam resultado.
+            </p>
+          </div>
+        </motion.div>
+
         {/* Copyright */}
         <div className="border-t border-dark-highlight/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-dark-medium text-sm">
-              © 2024 Planilha Gestão Inteligente. Todos os direitos reservados.
+              © 2024 EVENTO FOODVERSO. Todos os direitos reservados.
             </p>
             <div className="flex gap-6 text-sm text-dark-medium">
               <a href="#" className="hover:text-dark-highlight transition-colors">

@@ -29,7 +29,7 @@ const HeroSection = () => {
               className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-dark-highlight"
             >
               <Zap className="w-4 h-4" />
-              <span className="text-sm font-medium">Acelere sua produtividade</span>
+              <span className="text-sm font-medium">Criada por quem vive o dia a dia de um restaurante</span>
             </motion.div>
             
             {/* Main Title */}
@@ -39,9 +39,9 @@ const HeroSection = () => {
               transition={{ delay: 0.4 }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold text-dark-light leading-tight"
             >
-              Planilha
-              <span className="text-dark-highlight block">Gestão</span>
-              <span className="text-dark-cta">Inteligente</span>
+              <span className="text-dark-cta">ELIMINE</span> até
+              <span className="text-dark-highlight block">48% Menos</span>
+              <span className="text-dark-light">Prejuízo</span>
             </motion.h1>
             
             {/* Subtitle */}
@@ -51,8 +51,7 @@ const HeroSection = () => {
               transition={{ delay: 0.6 }}
               className="text-xl md:text-2xl text-dark-medium leading-relaxed"
             >
-              Transforme sua organização com uma ferramenta que <strong className="text-dark-highlight">automatiza cálculos</strong>, 
-              gera <strong className="text-dark-highlight">relatórios visuais</strong> e acelera seus resultados.
+              A planilha que <strong className="text-dark-highlight">donos de restaurantes de verdade</strong> usam para sair do caos e conquistar clareza financeira, mesmo sem ser especialista em números.
             </motion.p>
             
             {/* Features List */}
@@ -63,15 +62,28 @@ const HeroSection = () => {
               className="flex flex-wrap gap-4"
             >
               {[
-                { icon: TrendingUp, text: "Dashboards Interativos" },
-                { icon: Zap, text: "Automação Inteligente" },
-                { icon: Rocket, text: "Resultados Rápidos" }
+                { icon: TrendingUp, text: "Simples" },
+                { icon: Zap, text: "Prática" },
+                { icon: Rocket, text: "Pronta para usar" }
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-2 glass-light px-4 py-2 rounded-lg">
                   <item.icon className="w-5 h-5 text-dark-highlight" />
                   <span className="text-dark-light text-sm font-medium">{item.text}</span>
                 </div>
               ))}
+            </motion.div>
+
+            {/* Social proof text */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.9 }}
+              className="glass-light p-4 rounded-xl"
+            >
+              <p className="text-dark-light text-center">
+                <strong className="text-dark-highlight">Desenvolvida e usada</strong> por quem vive o dia a dia do seu negócio.<br />
+                <span className="text-dark-medium">Funciona para qualquer tipo de restaurante.</span>
+              </p>
             </motion.div>
             
             {/* Price and CTA */}
@@ -94,7 +106,7 @@ const HeroSection = () => {
                 whileTap={{ scale: 0.95 }}
                 className="w-full md:w-auto bg-gradient-to-r from-dark-cta to-dark-highlight text-white font-bold text-lg px-8 py-4 rounded-xl shadow-2xl hover:shadow-dark-highlight/25 transition-all duration-300 animate-glow"
               >
-                🚀 ACELERAR MINHA GESTÃO AGORA
+                🚀 QUERO ELIMINAR OS PREJUÍZOS AGORA
               </motion.button>
               
               <p className="text-dark-medium text-sm">
@@ -125,8 +137,8 @@ const HeroSection = () => {
               transition={{ delay: 1.2 }}
               className="absolute top-20 -left-10 glass p-4 rounded-xl"
             >
-              <div className="text-dark-highlight text-2xl font-bold">+300%</div>
-              <div className="text-dark-light text-sm">Produtividade</div>
+              <div className="text-dark-highlight text-2xl font-bold">-48%</div>
+              <div className="text-dark-light text-sm">Prejuízos</div>
             </motion.div>
             
             <motion.div
@@ -135,8 +147,8 @@ const HeroSection = () => {
               transition={{ delay: 1.4 }}
               className="absolute bottom-20 -right-10 glass p-4 rounded-xl"
             >
-              <div className="text-dark-highlight text-2xl font-bold">-80%</div>
-              <div className="text-dark-light text-sm">Tempo Perdido</div>
+              <div className="text-dark-highlight text-2xl font-bold">+300%</div>
+              <div className="text-dark-light text-sm">Clareza</div>
             </motion.div>
           </motion.div>
         </div>

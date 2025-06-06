@@ -6,38 +6,38 @@ const BenefitsSection = () => {
   const benefits = [
     {
       icon: BarChart3,
-      title: "Dashboards Visuais",
-      description: "Gráficos automáticos que transformam seus dados em insights poderosos",
+      title: "Controle Financeiro Total",
+      description: "Saiba exatamente quanto entra, quanto sai e principalmente quanto sobra no seu restaurante",
       color: "text-dark-highlight"
     },
     {
       icon: Zap,
-      title: "Automação Inteligente",
-      description: "Cálculos complexos executados automaticamente, sem erros manuais",
+      title: "Fácil de Usar",
+      description: "Mesmo se você nunca usou Excel, vai conseguir usar. Foi feita para ser simples e prática",
       color: "text-dark-cta"
     },
     {
       icon: Target,
-      title: "Controle Financeiro",
-      description: "Gerencie receitas, despesas e investimentos em um só lugar",
+      title: "Para Qualquer Restaurante",
+      description: "Hamburguerias, pizzarias, sushi, lanchonetes, padarias, buffets e cafeterias",
       color: "text-dark-highlight"
     },
     {
       icon: TrendingUp,
-      title: "Análise de Crescimento",
-      description: "Monitore seu progresso e identifique oportunidades de melhoria",
+      title: "Resultados Imediatos",
+      description: "Comece a usar hoje mesmo e veja a diferença na organização financeira",
       color: "text-dark-cta"
     },
     {
       icon: Shield,
-      title: "Dados Seguros",
-      description: "Planilha local, seus dados permanecem 100% privados e seguros",
+      title: "Garantia Total",
+      description: "7 dias de garantia incondicional. É risco zero para você",
       color: "text-dark-highlight"
     },
     {
       icon: Clock,
-      title: "Economia de Tempo",
-      description: "Automatize tarefas repetitivas e foque no que realmente importa",
+      title: "Suporte Completo",
+      description: "Vídeo explicativo passo a passo e suporte para tirar suas dúvidas",
       color: "text-dark-cta"
     }
   ];
@@ -58,12 +58,12 @@ const BenefitsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-dark-light mb-6">
-            Por que escolher nossa
-            <span className="text-dark-highlight block">Planilha Inteligente?</span>
+            Criada por quem entende
+            <span className="text-dark-highlight block">o seu negócio</span>
           </h2>
           <p className="text-xl text-dark-medium max-w-3xl mx-auto">
-            Desenvolvida para profissionais que querem <strong className="text-dark-highlight">resultados extraordinários</strong> 
-            em menos tempo, com mais precisão e total controle.
+            Não é só mais uma planilha. É a solução que <strong className="text-dark-highlight">funciona de verdade</strong> 
+            para donos de restaurante que querem sair do caos financeiro.
           </p>
         </motion.div>
 
@@ -99,26 +99,28 @@ const BenefitsSection = () => {
           ))}
         </div>
 
-        {/* Bottom CTA */}
+        {/* Creator testimonial */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center mt-16"
         >
-          <div className="glass p-8 rounded-2xl max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-dark-light mb-4">
-              Pronto para <span className="text-dark-highlight">acelerar</span> seus resultados?
-            </h3>
-            <p className="text-dark-medium mb-6">
-              Junte-se a centenas de profissionais que já transformaram sua gestão
-            </p>
+          <div className="glass p-8 rounded-2xl max-w-4xl mx-auto">
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold text-dark-highlight mb-2">William Flores</h3>
+              <p className="text-dark-light italic leading-relaxed">
+                "Eu sei como é vender bem e mesmo assim não ver o dinheiro sobrar. Já passei por isso. 
+                Foi por isso que criei essa planilha: para ajudar donos de restaurante como você a entender, 
+                de forma clara e sem complicação, <strong className="text-dark-highlight">quanto entra, quanto sai e principalmente, quanto sobra.</strong>"
+              </p>
+            </div>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-gradient-to-r from-dark-cta to-dark-highlight text-white font-bold px-8 py-4 rounded-xl hover:shadow-lg hover:shadow-dark-highlight/25 transition-all duration-300"
             >
-              QUERO MINHA PLANILHA AGORA
+              QUERO CONQUISTAR CLAREZA FINANCEIRA
             </motion.button>
           </div>
         </motion.div>

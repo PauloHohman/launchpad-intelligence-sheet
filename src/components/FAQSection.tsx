@@ -8,32 +8,32 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "Como funciona a Planilha Gestão Inteligente?",
-      answer: "Nossa planilha é desenvolvida no Excel/Google Sheets com fórmulas avançadas e macros que automatizam cálculos complexos. Você insere seus dados e ela gera automaticamente relatórios visuais, dashboards e análises detalhadas."
+      question: "Serve para qualquer tipo de restaurante?",
+      answer: "Sim! A planilha é usada em hamburguerias, pizzarias, sushi, lanchonetes, padarias, buffets e até cafeterias."
     },
     {
-      question: "Preciso ter conhecimento avançado em planilhas?",
-      answer: "Não! A planilha foi desenvolvida para ser intuitiva. Todas as células de entrada estão claramente marcadas e há instruções passo a passo. Você só precisa inserir seus dados nos campos indicados."
+      question: "Sou iniciante. Consigo usar?",
+      answer: "Totalmente. Ela foi feita pra ser simples, mesmo pra quem nunca usou Excel."
     },
     {
-      question: "Funciona no Excel e Google Sheets?",
-      answer: "Sim! A planilha é compatível com Microsoft Excel (2016 ou superior) e Google Sheets. Fornecemos versões otimizadas para ambas as plataformas."
+      question: "Funciona no celular?",
+      answer: "Funciona, mas recomendamos o uso em computador ou tablet para melhor visualização."
     },
     {
-      question: "Que tipo de dados posso gerenciar?",
-      answer: "Você pode gerenciar finanças pessoais/empresariais, controle de vendas, análise de investimentos, acompanhamento de metas, gestão de projetos e muito mais. É totalmente personalizável."
+      question: "É só baixar e sair usando?",
+      answer: "Sim! Assim que a compra for confirmada, você receberá a planilha e um vídeo explicando tudo passo a passo."
     },
     {
-      question: "Como recebo a planilha após o pagamento?",
-      answer: "Imediatamente após a confirmação do pagamento, você receberá um email com o link para download. O processo é 100% automatizado e leva menos de 5 minutos."
+      question: "E se eu não gostar?",
+      answer: "Você tem 7 dias de garantia incondicional. É risco zero pra você."
     },
     {
-      question: "Existe garantia?",
-      answer: "Sim! Oferecemos garantia incondicional de 7 dias. Se por qualquer motivo não ficar satisfeito, devolvemos 100% do seu dinheiro, sem perguntas."
+      question: "Como funciona após a compra?",
+      answer: "Imediatamente após a confirmação do pagamento, você receberá um email com o link para download da planilha e acesso ao vídeo explicativo completo."
     },
     {
-      question: "Recebo atualizações da planilha?",
-      answer: "Sim! Durante 1 ano você receberá todas as atualizações e melhorias gratuitamente. Além disso, tem acesso ao nosso suporte via WhatsApp."
+      question: "Preciso de conhecimento avançado em planilhas?",
+      answer: "Não! A planilha foi desenvolvida para ser intuitiva. Todas as células de entrada estão claramente marcadas e há instruções passo a passo."
     },
     {
       question: "Meus dados ficam seguros?",
@@ -56,7 +56,7 @@ const FAQSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-dark-light mb-6">
-            Perguntas
+            FAQ — Perguntas
             <span className="text-dark-highlight block">Frequentes</span>
           </h2>
           <p className="text-xl text-dark-medium max-w-2xl mx-auto">
