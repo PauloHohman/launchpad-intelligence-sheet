@@ -112,7 +112,7 @@ const HeroSection = () => {
                 whileTap={{ scale: 0.95 }}
                 className="inline-block w-full md:w-auto bg-gradient-to-r from-dark-cta to-dark-highlight text-white font-bold text-lg px-8 py-4 rounded-xl shadow-2xl hover:shadow-dark-highlight/25 transition-all duration-300 animate-glow text-center"
               >
-                🚀 QUERO ELIMINAR OS PREJUÍZOS AGORA
+                🚀 QUERO ACELERAR MINHA GESTÃO AGORA
               </motion.a>
               
               <p className="text-dark-medium text-sm">

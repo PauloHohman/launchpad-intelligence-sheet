@@ -51,9 +51,12 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="text-2xl font-bold text-dark-highlight">
+          <button
+            onClick={() => scrollToSection('hero')}
+            className="text-2xl font-bold text-dark-highlight hover:text-dark-cta transition-colors"
+          >
             Gestão Inteligente
-          </div>
+          </button>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
@@ -61,7 +64,7 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-dark-light hover:text-dark-highlight transition-colors duration-200"
+                className="text-dark-light hover:text-dark-highlight transition-colors duration-200 font-medium"
               >
                 {item.name}
               </button>
@@ -89,7 +92,7 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left text-dark-light hover:text-dark-highlight transition-colors duration-200 py-2"
+                className="block w-full text-left text-dark-light hover:text-dark-highlight transition-colors duration-200 py-2 font-medium"
               >
                 {item.name}
               </button>
