@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Rocket, TrendingUp, Zap } from 'lucide-react';
 import RocketIcon from './RocketIcon';
@@ -6,7 +5,7 @@ import FloatingElements from './FloatingElements';
 
 const HeroSection = () => {
   // Links configuráveis
-  const linkcompra = "https://exemplo.com/compra";
+  const linkcompra = "https://produtos.foguetewill.com.br/pay/pre-venda-planilha-will";
 
   return (
     <section id="hero" className="relative min-h-screen bg-gradient-to-br from-dark-primary via-dark-accent to-dark-primary overflow-hidden pt-20">

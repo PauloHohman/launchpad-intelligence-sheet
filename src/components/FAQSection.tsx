@@ -28,7 +28,7 @@ const FAQSection = () => {
     },
     {
       question: "E se eu não gostar?",
-      answer: "Você tem 7 dias de garantia incondicional. É risco zero pra você."
+      answer: "Você tem 14 dias de garantia incondicional. É risco zero pra você."
     },
     {
       question: "Como funciona após a compra?",

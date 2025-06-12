@@ -4,7 +4,7 @@ import { MessageCircle, Shield, Clock } from 'lucide-react';
 
 const Footer = () => {
   // Links configuráveis
-  const linkcompra = "https://exemplo.com/compra";
+  const linkcompra = "https://produtos.foguetewill.com.br/pay/pre-venda-planilha-will";
   const linkzap = "https://wa.me/5541999225894";
 
   return (
@@ -50,7 +50,7 @@ const Footer = () => {
                 "Suporte técnico",
                 "Política de privacidade", 
                 "Termos de uso",
-                "Garantia de 7 dias"
+                "Garantia de 14 dias"
               ].map((link, index) => (
                 <li key={index}>
                   <a 

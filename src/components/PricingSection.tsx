@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 const PricingSection = () => {
   // Links configuráveis
-  const linkcompra = "https://exemplo.com/compra";
+  const linkcompra = "https://produtos.foguetewill.com.br/pay/pre-venda-planilha-will";
 
   // Estado para o contador de tempo
   const [timeLeft, setTimeLeft] = useState({
@@ -53,7 +53,7 @@ const PricingSection = () => {
     "✅ Templates prontos para usar",
     "✅ Suporte técnico por WhatsApp",
     "✅ Atualizações gratuitas por 1 ano",
-    "✅ Garantia de 7 dias ou seu dinheiro de volta"
+    "✅ Garantia de 14 dias ou seu dinheiro de volta"
   ];
 
   return (
@@ -181,10 +181,10 @@ const PricingSection = () => {
             <div className="text-center space-y-2">
               <p className="text-dark-light flex items-center justify-center gap-2">
                 <Star className="w-4 h-4 text-dark-highlight fill-current" />
-                <span className="text-sm">Pagamento 100% seguro via Mercado Pago</span>
+                <span className="text-sm">Pagamento 100% seguro via Digital Manager Guru</span>
               </p>
               <p className="text-dark-medium text-sm">
-                ⚡ Download imediato • 🛡️ Garantia de 7 dias • 🎯 Suporte incluso
+                ⚡ Download imediato • 🛡️ Garantia de 14 dias • 🎯 Suporte incluso
               </p>
             </div>
           </div>
