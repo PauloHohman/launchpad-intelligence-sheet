@@ -1,9 +1,13 @@
+
 import { motion } from 'framer-motion';
 import { Plus, Minus } from 'lucide-react';
 import { useState } from 'react';
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  // Link configurável para WhatsApp
+  const linkzap = "https://wa.me/5541999225894";
 
   const faqs = [
     {
@@ -126,13 +130,16 @@ const FAQSection = () => {
             <p className="text-dark-medium mb-6">
               Entre em contato conosco pelo WhatsApp e tire todas as suas dúvidas
             </p>
-            <motion.button
+            <motion.a
+              href={linkzap}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-xl transition-colors duration-300 inline-flex items-center gap-2"
             >
               💬 Falar no WhatsApp
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
       </div>

@@ -5,7 +5,7 @@ import { MessageCircle, Shield, Clock } from 'lucide-react';
 const Footer = () => {
   // Links configuráveis
   const linkcompra = "https://exemplo.com/compra";
-  const linkzap = "https://wa.me/5511999999999";
+  const linkzap = "https://wa.me/5541999225894";
 
   return (
     <footer id="footer" className="bg-dark-accent border-t border-dark-highlight/20">
