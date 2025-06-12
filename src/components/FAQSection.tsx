@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Plus, Minus } from 'lucide-react';
 import { useState } from 'react';
@@ -46,7 +45,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-dark-primary to-dark-accent">
+    <section id="faq" className="py-20 bg-gradient-to-b from-dark-primary to-dark-accent">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div

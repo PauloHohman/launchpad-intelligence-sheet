@@ -1,9 +1,11 @@
-
 import { motion } from 'framer-motion';
 import { Check, Zap, Star, Clock } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const PricingSection = () => {
+  // Links configuráveis
+  const linkcompra = "https://exemplo.com/compra";
+
   // Estado para o contador de tempo
   const [timeLeft, setTimeLeft] = useState({
     hours: 23,
@@ -55,7 +57,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-dark-accent to-dark-primary relative overflow-hidden">
+    <section id="pricing" className="py-20 bg-gradient-to-b from-dark-accent to-dark-primary relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -165,13 +167,16 @@ const PricingSection = () => {
             </div>
 
             {/* CTA Button */}
-            <motion.button
+            <motion.a
+              href={linkcompra}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="w-full bg-gradient-to-r from-dark-cta to-dark-highlight text-white font-bold text-xl py-6 rounded-2xl shadow-2xl hover:shadow-dark-highlight/30 transition-all duration-300 mb-6 animate-glow"
+              className="w-full bg-gradient-to-r from-dark-cta to-dark-highlight text-white font-bold text-xl py-6 rounded-2xl shadow-2xl hover:shadow-dark-highlight/30 transition-all duration-300 mb-6 animate-glow inline-block text-center"
             >
               🚀 QUERO ACELERAR MINHA GESTÃO AGORA
-            </motion.button>
+            </motion.a>
             
             <div className="text-center space-y-2">
               <p className="text-dark-light flex items-center justify-center gap-2">
