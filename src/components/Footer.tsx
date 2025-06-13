@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { MessageCircle, Shield, Clock } from 'lucide-react';
 
 const Footer = () => {
-  // Links configuráveis
+  // Links configuráveis e seguros
   const linkcompra = "https://produtos.foguetewill.com.br/pay/pre-venda-planilha-will";
   const linkzap = "https://wa.me/5541999225894";
 
@@ -53,12 +53,9 @@ const Footer = () => {
                 "Garantia de 14 dias"
               ].map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href="#" 
-                    className="text-dark-medium hover:text-dark-highlight transition-colors duration-200"
-                  >
+                  <span className="text-dark-medium hover:text-dark-highlight transition-colors duration-200 cursor-pointer">
                     {link}
-                  </a>
+                  </span>
                 </li>
               ))}
             </ul>
@@ -118,6 +115,9 @@ const Footer = () => {
           >
             GARANTIR MINHA PLANILHA AGORA
           </motion.a>
+          <p className="text-dark-medium text-sm mt-4">
+            ⚡ Download imediato • 🛡️ Garantia de 14 dias
+          </p>
         </motion.div>
 
         {/* Anti-piracy notice */}
@@ -130,7 +130,7 @@ const Footer = () => {
           <h4 className="text-lg font-bold text-dark-cta mb-4 text-center">⚠️ PIRATARIA É CRIME</h4>
           <div className="text-dark-medium text-sm space-y-2">
             <p>
-              A venda da planilha <strong className="text-dark-light">Caixa Blindado</strong> só pode ser realizada através deste site, 
+              A venda da planilha <strong className="text-dark-light">Planilha Gestão Inteligente</strong> só pode ser realizada através deste site, 
               registrado em nome de <strong className="text-dark-highlight">EVENTO FOODVERSO</strong>. Qualquer outro local em que você 
               encontre esse produto é falsificação e infringe a lei.
             </p>
@@ -153,15 +153,15 @@ const Footer = () => {
               © 2024 EVENTO FOODVERSO. Todos os direitos reservados.
             </p>
             <div className="flex gap-6 text-sm text-dark-medium">
-              <a href="#" className="hover:text-dark-highlight transition-colors">
+              <span className="hover:text-dark-highlight transition-colors cursor-pointer">
                 Privacidade
-              </a>
-              <a href="#" className="hover:text-dark-highlight transition-colors">
+              </span>
+              <span className="hover:text-dark-highlight transition-colors cursor-pointer">
                 Termos
-              </a>
-              <a href="#" className="hover:text-dark-highlight transition-colors">
+              </span>
+              <span className="hover:text-dark-highlight transition-colors cursor-pointer">
                 Contato
-              </a>
+              </span>
             </div>
           </div>
         </div>

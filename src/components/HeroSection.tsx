@@ -1,10 +1,11 @@
+
 import { motion } from 'framer-motion';
 import { Rocket, TrendingUp, Zap } from 'lucide-react';
 import RocketIcon from './RocketIcon';
 import FloatingElements from './FloatingElements';
 
 const HeroSection = () => {
-  // Links configuráveis
+  // Links configuráveis e seguros
   const linkcompra = "https://produtos.foguetewill.com.br/pay/pre-venda-planilha-will";
 
   return (
@@ -115,7 +116,7 @@ const HeroSection = () => {
               </motion.a>
               
               <p className="text-dark-medium text-sm">
-                ⚡ Download imediato após o pagamento
+                ⚡ Download imediato após o pagamento • 🛡️ Garantia de 14 dias
               </p>
             </motion.div>
           </motion.div>

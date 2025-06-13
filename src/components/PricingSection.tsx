@@ -1,9 +1,10 @@
+
 import { motion } from 'framer-motion';
 import { Check, Zap, Star, Clock } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const PricingSection = () => {
-  // Links configuráveis
+  // Links configuráveis e seguros
   const linkcompra = "https://produtos.foguetewill.com.br/pay/pre-venda-planilha-will";
 
   // Estado para o contador de tempo
