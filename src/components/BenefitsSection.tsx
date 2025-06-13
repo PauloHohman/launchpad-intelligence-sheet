@@ -31,7 +31,7 @@ const BenefitsSection = () => {
     {
       icon: Shield,
       title: "Garantia Total",
-      description: "7 dias de garantia incondicional. É risco zero para você",
+      description: "14 dias de garantia incondicional. É risco zero para você",
       color: "text-dark-highlight"
     },
     {
@@ -43,7 +43,7 @@ const BenefitsSection = () => {
   ];
 
   // Links configuráveis
-  const linkcompra = "https://exemplo.com/compra";
+  const linkcompra = "https://produtos.foguetewill.com.br/pay/pre-venda-planilha-will";
   const linkzap = "https://wa.me/5511999999999";
 
   return (
